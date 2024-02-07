@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.IdentityModel.Abstractions" Version="7.3.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Logging" />
   </ItemGroup>
 
   <ItemGroup>
