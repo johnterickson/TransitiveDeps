@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 
 namespace ProjB.Test
 {
@@ -8,9 +7,7 @@ namespace ProjB.Test
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual(
-                12,
-                typeof(JsonSerializer).Assembly.GetName().Version?.Major);
+            Assert.AreEqual(6, Class1.GetVersion());
         }
     }
 }
