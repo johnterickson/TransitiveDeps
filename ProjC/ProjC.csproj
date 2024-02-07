@@ -12,13 +12,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.IdentityModel.Abstractions" Version="7.3.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ProjB\ProjB.csproj" />
   </ItemGroup>
-  
+
   <Target BeforeTargets="_CopyFilesMarkedCopyLocal" Name="RandomDelay">
     <Exec Command="cmd /c ping 127.0.0.1 -n $(RandomDelay)" />
   </Target>
