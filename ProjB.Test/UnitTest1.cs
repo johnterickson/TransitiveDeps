@@ -7,7 +7,7 @@ namespace ProjB.Test
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual(6, Class1.GetVersion());
+            Assert.AreEqual(7, Class1.GetVersion());
         }
     }
 }
