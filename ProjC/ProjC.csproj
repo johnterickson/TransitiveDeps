@@ -5,18 +5,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <OutputPath>..\output</OutputPath>
-    <RandomDelay>$([System.Environment]::TickCount)</RandomDelay>
-    <RandomDelay>$([MSBuild]::Modulo($(RandomDelay), 10))</RandomDelay>
-    <RandomDelay>$([MSBuild]::Add($(RandomDelay), 1))</RandomDelay>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ProjB\ProjB.csproj" />
   </ItemGroup>
-
-  <Target BeforeTargets="_CopyFilesMarkedCopyLocal" Name="RandomDelay">
-    <Exec Command="cmd /c ping 127.0.0.1 -n $(RandomDelay)" />
-  </Target>
-
 </Project>
